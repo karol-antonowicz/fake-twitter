@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgb(20, 19, 19);
+}
+
+.wrap {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0.9rem 0.9rem 1.2rem 0.9rem;
+}
+
+header {
+    padding-bottom: 3.5rem;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.big {
+font-size: 0.9rem;
+
+}
+
+.big h1 {
+    padding-top: 1rem;
+    line-height: 2rem;
+   letter-spacing: 0.5px;
+   
+}
+
+.login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login h3 {
+    align-self: flex-start;
+    padding-bottom: 0.4rem;
+    font-size: 1rem;
+    
+}
+
+.login a {
+background-color: rgb(172, 105, 30);
+width: 100%;
+text-align: center;
+padding-top: 0.6rem;
+padding-bottom: 0.6rem;
+border-radius: 1.6rem;
+margin-top: 0.4rem;
+margin-bottom: 0.4rem;
+font-weight: bold;
+text-decoration: none;
+color: white;
+font-size: 0.8rem;
+}
+
+.login a:nth-of-type(2) {
+    background-color: white;
+    color: rgb(172, 105, 30);
+    border: 1px solid rgb(172, 105, 30);
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/toilet-brown-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 80%;
+    background-position-y: 20%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
+}
+
+.info h3 {
+padding: 1.2rem 0 1.2rem 0;
+color: white;
+
+}
+
+.info i {
+    padding-left: 1.8rem;
+    padding-right: 1.0rem;
+    color: white;
+}
+
+/* .login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login h3 {
+    align-self: flex-start;
+    padding-bottom: 0.4rem;
+    font-size: 1rem;
+} */
+
+.--bottom {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.--bottom div {
+    padding-top: 1rem;
+}
+
+.--bottom a {
+    width: 48%;
+}
+
+footer {
+    padding: 0.9rem 0.9rem 1.2rem 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer a {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.4rem 0.4rem 0.4rem;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+    color: gray;
+}
+
+@media (min-width: 800px) {
+    .bottom--display {
+        display: none;
+    }
+
+    .desktop--flex {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 90vh;
+        min-height: 370px;
+       
+
+    }
+
+    .wrap {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .info {
+        width: 50%;
+    }
