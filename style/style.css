@@ -6,11 +6,20 @@
     color: rgb(20, 19, 19);
 }
 
+.forgot {
+    display: none;
+}
+
 .wrap {
     max-width: 400px;
     margin: 0 auto;
     padding: 0.9rem 0.9rem 1.2rem 0.9rem;
 }
+
+.login--top {
+    display: none;
+}
+
 
 header {
     padding-bottom: 3.5rem;
@@ -26,15 +35,15 @@ header {
 }
 
 .big {
-font-size: 0.9rem;
+    font-size: 0.9rem;
 
 }
 
 .big h1 {
     padding-top: 1rem;
     line-height: 2rem;
-   letter-spacing: 0.5px;
-   
+    letter-spacing: 0.5px;
+
 }
 
 .login {
@@ -48,22 +57,26 @@ font-size: 0.9rem;
     align-self: flex-start;
     padding-bottom: 0.4rem;
     font-size: 1rem;
-    
+
 }
 
 .login a {
-background-color: rgb(172, 105, 30);
-width: 100%;
-text-align: center;
-padding-top: 0.6rem;
-padding-bottom: 0.6rem;
-border-radius: 1.6rem;
-margin-top: 0.4rem;
-margin-bottom: 0.4rem;
-font-weight: bold;
-text-decoration: none;
-color: white;
-font-size: 0.8rem;
+    background-color: rgb(172, 105, 30);
+    width: 100%;
+    text-align: center;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    border-radius: 1.6rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.login a:hover {
+    background-color: rgb(145, 89, 26);
 }
 
 .login a:nth-of-type(2) {
@@ -72,6 +85,10 @@ font-size: 0.8rem;
     border: 1px solid rgb(172, 105, 30);
 }
 
+.login a:nth-of-type(2):hover {
+    background-color: rgb(252, 238, 223);
+
+}
 .info {
     width: 100%;
     display: flex;
@@ -89,8 +106,8 @@ font-size: 0.8rem;
 }
 
 .info h3 {
-padding: 1.2rem 0 1.2rem 0;
-color: white;
+    padding: 1.2rem 0 1.2rem 0;
+    color: white;
 
 }
 
@@ -152,7 +169,7 @@ footer a {
         flex-direction: row-reverse;
         height: 90vh;
         min-height: 370px;
-       
+
 
     }
 
@@ -166,3 +183,152 @@ footer a {
     .info {
         width: 50%;
     }
+.forgot {
+ display: none;
+}
+}
+
+    @media (min-width:1001px) and (min-height:660px) {
+        .forgot {
+            display: initial;
+            position: absolute;
+            top: 65px;
+            left: 170px;
+            padding-top: 0.1rem;
+            padding-left: 0.05rem;
+            
+        
+        }
+
+        .forgot a {
+            text-decoration: none;
+            
+        }
+        .forgot a:hover {
+            text-decoration: underline;
+            color: rgb(245, 195, 141);
+            
+        }
+        .forgot h5 {
+            
+            color: rgb(245, 195, 141)
+        }
+
+
+        .wrap {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+
+
+        }
+
+
+        .login--top {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 1fr;
+            position: absolute;
+            top: 1rem;
+            left: 0;
+            gap: 10px;
+          /*  background-color: rgb(252, 238, 223); */
+          background-color: white;
+           
+
+        }
+
+        .login--top h4 {
+            font-size: 0.8rem;
+            color: rgb(172, 105, 30);
+            max-width: 160px;
+            margin-right: 0;
+            background-color:rgb(252, 238, 223);
+            
+                    }
+
+
+      }
+.login--top__a {
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    width: 70px;
+   
+}
+.login--top__a a:hover {
+    background-color:rgb(252, 238, 223);
+}
+        .login--top__a a {
+
+            width: 100%;
+            text-align: center;
+            padding-top: 0.6rem;
+            padding-bottom: 0.6rem;
+            border-radius: 1.6rem;
+            justify-self: center;     
+           
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 0.8rem;
+            background-color: white;
+            color: rgb(172, 105, 30);
+            border: 1px solid rgb(172, 105, 30);
+        }
+
+       input {
+           background-color: rgb(252, 238, 223);
+           border: none;
+           border-bottom: 1px solid rgb(172, 105, 30);
+           line-height: 2rem;
+           width: 100%;
+           font-size: 1.1rem;
+           font-weight: bold;
+                       
+          
+       }
+       input:focus {
+                      outline-offset: none;
+           font: Helvetica, Arial, sans-serif;
+           font-size: 1.1rem;
+           font-weight: bold;
+           outline: none;
+       }
+       
+form {
+    width: 100%;
+}
+
+.login--top__username {
+    width: 160px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.login--top__password {
+    width: 160px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+
+}
+
+
+
+
+
+
+           
+          
+       
+            
+        
+    
